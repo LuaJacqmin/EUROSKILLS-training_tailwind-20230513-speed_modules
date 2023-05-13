@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body class="w-screen h-screen bg-teal-50 flex items-center justify-center">
+    <form class="p-8 bg-white rounded flex flex-col gap-4 shadow-lg shadow-grey-50">
+        <div class="flex flex-col gap-1">
+            <label class="font-serif text-teal-800" for="">Nom et prénom</label>
+            <input class="w-full rounded px-3 py-2 border border-teal-900 transition-all duration-200 ease-out hover:border-teal-500 focus:bg-teal-50 outline-teal-500 placeholder:text-grey-300" placeholder="Jane Doe" type="text">
+        </div>
+        <div class="flex flex-col gap-1">
+            <label class="font-serif text-teal-800" for="">Email</label>
+            <input class="w-full rounded px-3 py-2 border border-teal-900 transition-all duration-200 ease-out hover:border-teal-500 focus:bg-teal-50 outline-teal-500 placeholder:text-grey-300" type="email" placeholder="jane@doe.com">
+        </div>
+        <div class="flex flex-col gap-1">
+            <p class="font-serif text-teal-800">Quelle est votre pomme préférée ?</p>
+            <div class="flex gap-2 items-center">
+                <input class="peer/terre appearance-none display-none" type="checkbox" name="terre" id="terre">
+                <span class="w-4 h-4 flex rounded items-center justify-center border border-solid border-teal-300 peer-checked/terre:border-sky-800 peer-checked/terre:[&_span]:h-2 peer-checked/terre:[&_span]:w-2">
+                    <span class="w-0 h-0 rounded transition-all duration-200 ease-out bg-sky-800"></span>
+                </span>
+                <label for="terre" class="peer-checked/terre:text-sky-500">Pomme de terre </label>
+            </div>
+            <div class="flex gap-2 items-center">
+                <input class="peer/pin appearance-none display-none" type="checkbox" name="pin" id="pin">
+                <span class="w-4 h-4 flex rounded items-center justify-center border border-solid border-teal-300 peer-checked/pin:border-sky-800 peer-checked/pin:[&_span]:h-2 peer-checked/pin:[&_span]:w-2">
+                    <span class="w-0 h-0 rounded transition-all duration-200 ease-out bg-sky-800"></span>
+                </span>
+                <label for="pin" class="peer-checked/pin:text-sky-500">Pomme de pin </label>
+            </div>
+            <div class="flex gap-2 items-center">
+                <input class="peer/rainette appearance-none display-none" type="checkbox" name="rainette" id="rainette">
+                <span class="w-4 h-4 flex rounded items-center justify-center border border-solid border-teal-300 peer-checked/rainette:border-sky-800 peer-checked/rainette:[&_span]:h-2 peer-checked/rainette:[&_span]:w-2">
+                    <span class="w-0 h-0 rounded transition-all duration-200 ease-out bg-sky-800"></span>
+                </span>
+                <label for="rainette" class="peer-checked/rainette:text-sky-500">Pomme de rainette </label>
+            </div>
+            <div class="flex gap-2 items-center">
+                <input class="peer/api appearance-none display-none" type="checkbox" name="api" id="api">
+                <span class="w-4 h-4 flex rounded items-center justify-center border border-solid border-teal-300 peer-checked/api:border-sky-800 peer-checked/api:[&_span]:h-2 peer-checked/api:[&_span]:w-2">
+                    <span class="w-0 h-0 rounded transition-all duration-200 ease-out bg-sky-800"></span>
+                </span>
+                <label for="api" class="peer-checked/api:text-sky-500">Pomme d'api </label>
+            </div>
+        </div>
+        <div>
+            <p class="font-serif text-teal-800">L'oeuf ou la poule</p>
+            <div class="flex gap-2 items-center">
+                <input class="peer/poule appearance-none display-none" type="radio" name="poule" id="poule">
+                <span class="w-4 h-4 flex rounded-full items-center justify-center border border-solid border-teal-300 peer-checked/poule:border-sky-800 peer-checked/poule:[&_span]:h-2 peer-checked/poule:[&_span]:w-2">
+                    <span class="w-0 h-0 rounded-full transition-all duration-200 ease-out bg-sky-800"></span>
+                </span>
+                <label for="poule" class="peer-checked/poule:text-sky-500">La poule</label>
+            </div>
+            <div class="flex gap-2 items-center">
+                <input class="peer/oeuf appearance-none display-none" type="radio" name="poule" id="oeuf">
+                <span class="w-4 h-4 flex rounded-full items-center justify-center border border-solid border-teal-300 peer-checked/oeuf:border-sky-800 peer-checked/oeuf:[&_span]:h-2 peer-checked/oeuf:[&_span]:w-2">
+                    <span class="w-0 h-0 rounded-full transition-all duration-200 ease-out bg-sky-800"></span>
+                </span>
+                <label for="oeuf" class="peer-checked/oeuf:text-sky-500">L'oeuf</label>
+            </div>
+            <div class="flex gap-2 items-center">
+                <input class="peer/both appearance-none display-none" type="radio" name="poule" id="both">
+                <span class="w-4 h-4 flex rounded-full items-center justify-center border border-solid border-teal-300 peer-checked/both:border-sky-800 peer-checked/both:[&_span]:h-2 peer-checked/both:[&_span]:w-2">
+                    <span class="w-0 h-0 rounded-full transition-all duration-200 ease-out bg-sky-800"></span>
+                </span>
+                <label for="both" class="peer-checked/both:text-sky-500">Les deux</label>
+            </div>
+            <div class="flex gap-2 items-center">
+                <input class="peer/d appearance-none display-none" type="radio" name="poule" id="d">
+                <span class="w-4 h-4 flex rounded-full items-center justify-center border border-solid border-teal-300 peer-checked/d:border-sky-800 peer-checked/d:[&_span]:h-2 peer-checked/d:[&_span]:w-2">
+                    <span class="w-0 h-0 rounded-full transition-all duration-200 ease-out bg-sky-800"></span>
+                </span>
+                <label for="d" class="peer-checked/d:text-sky-500">La réponse D</label>
+            </div>
+        </div>
+        <button></button>
+    </form>
+</body>
+<script src="tailwind.js"></script>
+</html>
